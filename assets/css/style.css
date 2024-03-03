@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.woff);
+    src: url(../fonts/Lato-Regular.ttf) format("truetype");
+    src: url(../fonts/Lato-Bold.woff);
+    src: url(../fonts/Lato-Bold.ttf) format("truetype");
+    src: url(../fonts/Lato-Italic.woff);
+    src: url(../fonts/Lato-Italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Regular.woff);
+    src: url(../fonts/Raleway-Regular.ttf) format("truetype");
+    src: url(../fonts/Raleway-Bold.woff);
+    src: url(../fonts/Raleway-Bold.ttf) format("truetype");
+    src: url(../fonts/Raleway-Italic.woff);
+    src: url(../fonts/Raleway-Italic.ttf) format("truetype");
+}
+
+p, li, a, time{
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3{
+    font-family: "Lato", sans-serif;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow:8px 8px 10px 0 black
+}
+
+#photo{
+    height: 150px;
+    width: 150px;
+}
+ 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #782221;
+}
+
+address{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    color: white;
+}
+
+header p{
+    color: white;
+}
+
+
