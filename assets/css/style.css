@@ -18,11 +18,6 @@
     src: url(../fonts/Raleway-Italic.ttf) format("truetype");
 }
 
-body{
-    width: 1160px;
-    margin: auto;
-}
-
 p, li, a, time{
     font-family: "Raleway", sans-serif;
 }
@@ -31,23 +26,41 @@ h1, h2, h3{
     font-family: "Lato", sans-serif;
 }
 
-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow:8px 8px 10px 0 black
+body{
+    width: 1160px;
+    margin: auto;
+    box-sizing: border-box;
+    border-right: solid;
+    box-sizing: border-box;
 }
 
-#photo{
-    height: 150px;
-    width: 150px;
-}
- 
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #782221;
+}
+
+#photo{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    box-shadow:8px 8px 10px 0 black;
+    margin-top: 20px;
+}
+
+#photo:hover{
+    cursor: zoom-in;
+}
+
+h1{
+    color: white;
+    margin: 5px;
+}
+
+header p{
+    color: white;
+    margin: 15px;
 }
 
 address{
@@ -58,18 +71,7 @@ address{
 }
 
 address a{
-    margin: 10px;
-}
-
-h1{
-    color: white;
-}
-
-header p{
-    color: white;
-}
-
-a{
+    margin: 15px;
     color: white;
     text-decoration: none;
 }
@@ -82,17 +84,62 @@ main{
 
 aside{
     background-color: #782221;
+    grid-row: 1 / span 3;
 }
 
-footer{
-    background-color: #782221;
+aside section{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
 }
 
 h2{
     background-color: #dbc2a4;
+    padding-left: 15px;
+    border-left: 3px solid #782221;
 }
 
-section{
-    margin-right: 30px;
+aside p{
+    color: white;
+    margin-left: 15px;
+    text-align: justify;
+    text-indent: 45px;
 }
 
+aside li{
+    color: white;
+}
+
+main>section{
+    padding: 15px;
+}
+
+footer{
+    background-color: #782221;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+footer small{
+    color: white;
+}
+
+main>section:hover{
+    border-right: 5px solid #782221;
+}
+
+nav img:hover{
+opacity: 0.6;
+}
+
+a:hover{
+    text-decoration: underline;
+}
